@@ -1,14 +1,14 @@
 //
-//  TransactionCell.m
+//  CategoryCell.m
 //  GymManager
 //
-//  Created by Thinh on 8/12/16.
+//  Created by Thinh on 8/15/16.
 //  Copyright © 2016 vantientu. All rights reserved.
 //
 
-#import "TransactionCell.h"
+#import "CategoryCell.h"
 
-@implementation TransactionCell
+@implementation CategoryCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -17,7 +17,6 @@
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
-
     // Configure the view for the selected state
 }
 

@@ -8,35 +8,44 @@
 
 /* Begin PBXBuildFile section */
 		09E77F40D442DD862B0308B4 /* libPods-GymManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE7A8174D3CFE4CB610F82E6 /* libPods-GymManager.a */; };
+		4017EDF61D6175A30033E0AE /* AddTransactionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4017EDF51D6175A30033E0AE /* AddTransactionViewController.m */; };
 		40AB31241D5DB47400341359 /* Transaction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40AB31221D5DB47400341359 /* Transaction.storyboard */; };
-		40AB31291D5DC4E700341359 /* TransactionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40AB31271D5DC4E700341359 /* TransactionCell.m */; };
-		40AB312A1D5DC4E700341359 /* TransactionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40AB31281D5DC4E700341359 /* TransactionCell.xib */; };
 		40AB31311D5DD81000341359 /* ExpandableTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40AB312E1D5DD81000341359 /* ExpandableTableView.m */; };
+		40E1CB251D6185980024D8E4 /* CategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E1CB231D6185980024D8E4 /* CategoryCell.m */; };
+		40E1CB261D6185980024D8E4 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40E1CB241D6185980024D8E4 /* CategoryCell.xib */; };
+		40E1CB291D618DE00024D8E4 /* ListCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E1CB281D618DE00024D8E4 /* ListCategoryViewController.m */; };
+		40E1CB2C1D6197A00024D8E4 /* PopoverQuatityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E1CB2B1D6197A00024D8E4 /* PopoverQuatityViewController.m */; };
 		40EA22E91D5E26FF00B08942 /* HeaderViewContent.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40EA22E81D5E26FE00B08942 /* HeaderViewContent.xib */; };
 		40EA22EC1D5E27C700B08942 /* HeaderViewContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EA22EB1D5E27C700B08942 /* HeaderViewContent.m */; };
 		EF08095E1D5C8261007A8EAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF08095D1D5C8261007A8EAE /* main.m */; };
 		EF0809671D5C8261007A8EAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF0809651D5C8261007A8EAE /* Main.storyboard */; };
 		EF0809691D5C8261007A8EAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF0809681D5C8261007A8EAE /* Assets.xcassets */; };
 		EF08096C1D5C8261007A8EAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF08096A1D5C8261007A8EAE /* LaunchScreen.storyboard */; };
-		EF0809801D5C89AB007A8EAE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF08097F1D5C89AB007A8EAE /* AppDelegate.m */; settings = {ASSET_TAGS = (); }; };
-		EF0809891D5C8D3F007A8EAE /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0809881D5C8D3F007A8EAE /* BaseViewController.m */; settings = {ASSET_TAGS = (); }; };
-		EF08098B1D5C8D69007A8EAE /* TodayMeetingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF08098A1D5C8D69007A8EAE /* TodayMeetingsViewController.m */; settings = {ASSET_TAGS = (); }; };
-		EF0809931D5C954A007A8EAE /* PTMeetingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0809921D5C954A007A8EAE /* PTMeetingViewController.m */; settings = {ASSET_TAGS = (); }; };
-		EF0809981D5C97B6007A8EAE /* TransactionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0809971D5C97B6007A8EAE /* TransactionsViewController.m */; settings = {ASSET_TAGS = (); }; };
-		EF08099B1D5C97C9007A8EAE /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF08099A1D5C97C9007A8EAE /* MenuViewController.m */; settings = {ASSET_TAGS = (); }; };
-		EF870A751D5DA11200118D7C /* GymManagerConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = EF870A741D5DA11200118D7C /* GymManagerConstant.m */; settings = {ASSET_TAGS = (); }; };
-		EF870A831D5DB66700118D7C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF870A821D5DB66700118D7C /* LoginViewController.m */; settings = {ASSET_TAGS = (); }; };
-		EF870A861D5DBA9F00118D7C /* ic_key.png in Resources */ = {isa = PBXBuildFile; fileRef = EF870A841D5DBA9F00118D7C /* ic_key.png */; settings = {ASSET_TAGS = (); }; };
-		EF870A871D5DBA9F00118D7C /* ic_user.png in Resources */ = {isa = PBXBuildFile; fileRef = EF870A851D5DBA9F00118D7C /* ic_user.png */; settings = {ASSET_TAGS = (); }; };
+		EF0809801D5C89AB007A8EAE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF08097F1D5C89AB007A8EAE /* AppDelegate.m */; };
+		EF0809891D5C8D3F007A8EAE /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0809881D5C8D3F007A8EAE /* BaseViewController.m */; };
+		EF08098B1D5C8D69007A8EAE /* TodayMeetingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF08098A1D5C8D69007A8EAE /* TodayMeetingsViewController.m */; };
+		EF0809931D5C954A007A8EAE /* PTMeetingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0809921D5C954A007A8EAE /* PTMeetingViewController.m */; };
+		EF0809981D5C97B6007A8EAE /* TransactionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0809971D5C97B6007A8EAE /* TransactionsViewController.m */; };
+		EF08099B1D5C97C9007A8EAE /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF08099A1D5C97C9007A8EAE /* MenuViewController.m */; };
+		EF870A751D5DA11200118D7C /* GymManagerConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = EF870A741D5DA11200118D7C /* GymManagerConstant.m */; };
+		EF870A831D5DB66700118D7C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF870A821D5DB66700118D7C /* LoginViewController.m */; };
+		EF870A861D5DBA9F00118D7C /* ic_key.png in Resources */ = {isa = PBXBuildFile; fileRef = EF870A841D5DBA9F00118D7C /* ic_key.png */; };
+		EF870A871D5DBA9F00118D7C /* ic_user.png in Resources */ = {isa = PBXBuildFile; fileRef = EF870A851D5DBA9F00118D7C /* ic_user.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4017EDF41D6175A30033E0AE /* AddTransactionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddTransactionViewController.h; path = ViewControllers/TransactionsViewController/AddTransactionViewController/AddTransactionViewController.h; sourceTree = "<group>"; };
+		4017EDF51D6175A30033E0AE /* AddTransactionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddTransactionViewController.m; path = ViewControllers/TransactionsViewController/AddTransactionViewController/AddTransactionViewController.m; sourceTree = "<group>"; };
 		40AB31231D5DB47400341359 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Transaction.storyboard; sourceTree = "<group>"; };
-		40AB31261D5DC4E700341359 /* TransactionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TransactionCell.h; path = ViewControllers/TransactionsViewController/TransactionCell/TransactionCell.h; sourceTree = "<group>"; };
-		40AB31271D5DC4E700341359 /* TransactionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TransactionCell.m; path = ViewControllers/TransactionsViewController/TransactionCell/TransactionCell.m; sourceTree = "<group>"; };
-		40AB31281D5DC4E700341359 /* TransactionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TransactionCell.xib; path = ViewControllers/TransactionsViewController/TransactionCell/TransactionCell.xib; sourceTree = "<group>"; };
 		40AB312D1D5DD81000341359 /* ExpandableTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExpandableTableView.h; path = Library/ExpandableTableView/ExpandableTableView.h; sourceTree = "<group>"; };
 		40AB312E1D5DD81000341359 /* ExpandableTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExpandableTableView.m; path = Library/ExpandableTableView/ExpandableTableView.m; sourceTree = "<group>"; };
+		40E1CB221D6185980024D8E4 /* CategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CategoryCell.h; path = ViewControllers/TransactionsViewController/AddTransactionViewController/CategoryCell/CategoryCell.h; sourceTree = "<group>"; };
+		40E1CB231D6185980024D8E4 /* CategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CategoryCell.m; path = ViewControllers/TransactionsViewController/AddTransactionViewController/CategoryCell/CategoryCell.m; sourceTree = "<group>"; };
+		40E1CB241D6185980024D8E4 /* CategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CategoryCell.xib; path = ViewControllers/TransactionsViewController/AddTransactionViewController/CategoryCell/CategoryCell.xib; sourceTree = "<group>"; };
+		40E1CB271D618DE00024D8E4 /* ListCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListCategoryViewController.h; path = ViewControllers/TransactionsViewController/AddTransactionViewController/ListCategoryViewController.h; sourceTree = "<group>"; };
+		40E1CB281D618DE00024D8E4 /* ListCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListCategoryViewController.m; path = ViewControllers/TransactionsViewController/AddTransactionViewController/ListCategoryViewController.m; sourceTree = "<group>"; };
+		40E1CB2A1D6197A00024D8E4 /* PopoverQuatityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PopoverQuatityViewController.h; path = ViewControllers/TransactionsViewController/AddTransactionViewController/PopoverQuatityViewController.h; sourceTree = "<group>"; };
+		40E1CB2B1D6197A00024D8E4 /* PopoverQuatityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PopoverQuatityViewController.m; path = ViewControllers/TransactionsViewController/AddTransactionViewController/PopoverQuatityViewController.m; sourceTree = "<group>"; };
 		40EA22E81D5E26FE00B08942 /* HeaderViewContent.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HeaderViewContent.xib; path = Library/ExpandableTableView/HeaderViewContent.xib; sourceTree = "<group>"; };
 		40EA22EA1D5E27C700B08942 /* HeaderViewContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HeaderViewContent.h; path = Library/ExpandableTableView/HeaderViewContent.h; sourceTree = "<group>"; };
 		40EA22EB1D5E27C700B08942 /* HeaderViewContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HeaderViewContent.m; path = Library/ExpandableTableView/HeaderViewContent.m; sourceTree = "<group>"; };
@@ -99,14 +108,18 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		40AB31251D5DC1B300341359 /* TransactionCell */ = {
+		4017EDF31D6175650033E0AE /* AddTransactionViewController */ = {
 			isa = PBXGroup;
 			children = (
-				40AB31261D5DC4E700341359 /* TransactionCell.h */,
-				40AB31271D5DC4E700341359 /* TransactionCell.m */,
-				40AB31281D5DC4E700341359 /* TransactionCell.xib */,
+				40E1CB211D6185640024D8E4 /* CategoryCell */,
+				4017EDF41D6175A30033E0AE /* AddTransactionViewController.h */,
+				4017EDF51D6175A30033E0AE /* AddTransactionViewController.m */,
+				40E1CB271D618DE00024D8E4 /* ListCategoryViewController.h */,
+				40E1CB281D618DE00024D8E4 /* ListCategoryViewController.m */,
+				40E1CB2A1D6197A00024D8E4 /* PopoverQuatityViewController.h */,
+				40E1CB2B1D6197A00024D8E4 /* PopoverQuatityViewController.m */,
 			);
-			name = TransactionCell;
+			name = AddTransactionViewController;
 			sourceTree = "<group>";
 		};
 		40AB312B1D5DD7D800341359 /* Library */ = {
@@ -127,6 +140,16 @@
 				40EA22EB1D5E27C700B08942 /* HeaderViewContent.m */,
 			);
 			name = ExpandableTableView;
+			sourceTree = "<group>";
+		};
+		40E1CB211D6185640024D8E4 /* CategoryCell */ = {
+			isa = PBXGroup;
+			children = (
+				40E1CB221D6185980024D8E4 /* CategoryCell.h */,
+				40E1CB231D6185980024D8E4 /* CategoryCell.m */,
+				40E1CB241D6185980024D8E4 /* CategoryCell.xib */,
+			);
+			name = CategoryCell;
 			sourceTree = "<group>";
 		};
 		EF0809501D5C8261007A8EAE = {
@@ -267,7 +290,7 @@
 		EF0809941D5C975E007A8EAE /* TransactionsViewController */ = {
 			isa = PBXGroup;
 			children = (
-				40AB31251D5DC1B300341359 /* TransactionCell */,
+				4017EDF31D6175650033E0AE /* AddTransactionViewController */,
 				EF0809961D5C97B6007A8EAE /* TransactionsViewController.h */,
 				EF0809971D5C97B6007A8EAE /* TransactionsViewController.m */,
 			);
@@ -369,7 +392,7 @@
 				EF870A871D5DBA9F00118D7C /* ic_user.png in Resources */,
 				40EA22E91D5E26FF00B08942 /* HeaderViewContent.xib in Resources */,
 				40AB31241D5DB47400341359 /* Transaction.storyboard in Resources */,
-				40AB312A1D5DC4E700341359 /* TransactionCell.xib in Resources */,
+				40E1CB261D6185980024D8E4 /* CategoryCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,13 +452,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF08098B1D5C8D69007A8EAE /* TodayMeetingsViewController.m in Sources */,
+				4017EDF61D6175A30033E0AE /* AddTransactionViewController.m in Sources */,
 				40EA22EC1D5E27C700B08942 /* HeaderViewContent.m in Sources */,
+				40E1CB291D618DE00024D8E4 /* ListCategoryViewController.m in Sources */,
+				40E1CB2C1D6197A00024D8E4 /* PopoverQuatityViewController.m in Sources */,
 				EF870A751D5DA11200118D7C /* GymManagerConstant.m in Sources */,
 				EF0809891D5C8D3F007A8EAE /* BaseViewController.m in Sources */,
 				EF0809931D5C954A007A8EAE /* PTMeetingViewController.m in Sources */,
 				EF08099B1D5C97C9007A8EAE /* MenuViewController.m in Sources */,
 				EF870A831D5DB66700118D7C /* LoginViewController.m in Sources */,
-				40AB31291D5DC4E700341359 /* TransactionCell.m in Sources */,
+				40E1CB251D6185980024D8E4 /* CategoryCell.m in Sources */,
 				EF0809981D5C97B6007A8EAE /* TransactionsViewController.m in Sources */,
 				40AB31311D5DD81000341359 /* ExpandableTableView.m in Sources */,
 				EF08095E1D5C8261007A8EAE /* main.m in Sources */,

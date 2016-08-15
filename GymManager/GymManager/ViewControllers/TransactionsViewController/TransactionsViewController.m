@@ -7,9 +7,11 @@
 //
 
 #import "TransactionsViewController.h"
-#import "TransactionCell.h"
+#import "CategoryCell.h"
 #import <CCBottomRefreshControl/UIScrollView+BottomRefreshControl.h>
 
+static NSString *const kAddTransactionSegue = @"AddTransactionSegue";
+static NSString *const kCellIndentifier = @"CategoryCell";
 const CGFloat kTableViewCellHeight = 40.0;
 
 @interface TransactionsViewController () <UITableViewDelegate,UITableViewDataSource,ExpandableTableViewDelegate>
@@ -41,7 +43,7 @@ const CGFloat kTableViewCellHeight = 40.0;
     [self.tableView setAllHeadersInitiallyCollapsed:NO];
     [self.tableView setScrollEnabled:NO];
     self.tableView.expandableDelegate = self;
-    [self.tableView registerNib:[UINib nibWithNibName:@"TransactionCell" bundle:nil] forCellReuseIdentifier:@"TransactionCell"];
+    [self.tableView registerNib:[UINib nibWithNibName:kCellIndentifier bundle:nil] forCellReuseIdentifier:kCellIndentifier];
     [self.tableView reloadData];
     self.contraintTableViewCell.constant = self.tableView.contentSize.height;
     //Pull to rrefresh
@@ -85,7 +87,7 @@ const CGFloat kTableViewCellHeight = 40.0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    TransactionCell *cell = (TransactionCell*)[tableView dequeueReusableCellWithIdentifier:@"TransactionCell" forIndexPath:indexPath];
+    CategoryCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellIndentifier forIndexPath:indexPath];
     return cell;
 }
 
@@ -145,6 +147,10 @@ const CGFloat kTableViewCellHeight = 40.0;
         [self.indicaLoadMore setHidden:YES];
         [self.btnLoadMore setHidden:NO];
     });
+}
+
+- (IBAction)btnAddTranClick:(id)sender {
+    [self performSegueWithIdentifier:kAddTransactionSegue sender:nil];
 }
 
 @end
