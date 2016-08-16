@@ -12,6 +12,7 @@
 #import "MenuViewController.h"
 #import "TransactionsViewController.h"
 #import "LoginViewController.h"
+#import "CalendarViewController.h"
 
 NSString *const kTodayViewControllerTitle = @"Today";
 NSString *const kPTMeetingViewControllerTitle = @"PT Meeting";
@@ -25,9 +26,10 @@ NSString *const kMenuViewControllerTitle = @"Menu";
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    UIStoryboard *st = [UIStoryboard storyboardWithName:kNameStoryboard bundle:nil];
-    LoginViewController *loginVC = [st instantiateViewControllerWithIdentifier:kLoginViewControllerIdentifier];
-    self.window.rootViewController = loginVC;
+//    UIStoryboard *st = [UIStoryboard storyboardWithName:kNameStoryboard bundle:nil];
+//    LoginViewController *loginVC = [st instantiateViewControllerWithIdentifier:kLoginViewControllerIdentifier];
+    CalendarViewController *calVC = [[CalendarViewController alloc] init];
+    self.window.rootViewController = calVC;
     [self.window makeKeyAndVisible];
     // TODO
     //    UITabBarController *tabVC = [[UITabBarController alloc] init];
