@@ -32,6 +32,7 @@ const double kDefaultMaxLength = 10;
     return self;
 }
 
+#pragma mark - textfield handler
 - (void)textfieldCashDidChangeText {
     if (self.text.length) {
         if(![[self.text substringFromIndex:(self.text.length - 1)] isEqualToString:@"."]) {
