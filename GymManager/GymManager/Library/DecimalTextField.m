@@ -34,7 +34,7 @@ const double kDefaultMaxLength = 10;
 
 - (void)textfieldCashDidChangeText {
     if (self.text.length) {
-        if(![[self.text substringFromIndex:(self.text.length - 1)] hasSuffix:@"."]) {
+        if(![[self.text substringFromIndex:(self.text.length - 1)] isEqualToString:@"."]) {
             NSString *currentCost = [[self.text componentsSeparatedByCharactersInSet:[NSCharacterSet
                 characterSetWithCharactersInString:@","]] componentsJoinedByString:@""];
             self.value = currentCost.doubleValue;
