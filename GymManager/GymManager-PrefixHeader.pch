@@ -53,4 +53,10 @@
 #import <FBSDKShareKit/FBSDKShareKit.h>
 #import "FacebookService.h"
 #import "QBImagePickerController.h"
+#import "UserModel.h"
+#import "TrainerModel.h"
+#import "CustomerModel.h"
+#import "ItemModel.h"
+#import "TransactionModel.h"
+#import "MeetingModel.h"
 #endif /* GymManager_PrefixHeader_pch */
