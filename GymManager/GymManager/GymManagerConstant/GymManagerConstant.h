@@ -121,6 +121,9 @@ extern NSString *const kNotiDictKeyTrainer;
 extern NSString *const kNotiDictKeyCustomer;
 extern NSString *const kNotiDictKeyTrainerPhone;
 
+#pragma mark - GoogleMap SDK Key
+extern NSString *const kGoogleMapKey;
+
 #pragma mark - API
 extern NSString *const URLRequest;
 extern NSString *const URLRequestItem;

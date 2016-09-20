@@ -26,6 +26,8 @@
 		404650B91D86AF6B005229AD /* 1_bg_gym.png in Resources */ = {isa = PBXBuildFile; fileRef = 404650B71D86AF6B005229AD /* 1_bg_gym.png */; };
 		404650BA1D86AF6B005229AD /* 1_gym_view_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 404650B81D86AF6B005229AD /* 1_gym_view_bg.png */; };
 		406E24811D62C7AD00F013FB /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 406E24801D62C7AD00F013FB /* CalendarViewController.m */; };
+		407BB4801D9135AB008B1EE1 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 407BB47F1D9135AB008B1EE1 /* MapViewController.m */; };
+		407BB4851D9135ED008B1EE1 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 407BB4831D9135ED008B1EE1 /* Map.storyboard */; };
 		408933151D646B050081511C /* Customer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4089330E1D646B050081511C /* Customer.m */; };
 		408933161D646B050081511C /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 408933101D646B050081511C /* Person.m */; };
 		408933171D646B050081511C /* Trainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 408933121D646B050081511C /* Trainer.m */; };
@@ -71,15 +73,15 @@
 		EF0D909E1D8124CB00A2EE4A /* ShowPersonalIncomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0D909D1D8124CB00A2EE4A /* ShowPersonalIncomeViewController.m */; };
 		EF0D90A01D815F4F00A2EE4A /* AddNewCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7E23E61D672A3600B613FD /* AddNewCategoryViewController.m */; };
 		EF0D90A11D815FB900A2EE4A /* EditNumberOfCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7E23EA1D6740A400B613FD /* EditNumberOfCategoryViewController.m */; };
-		EF0DD55F1D8FD23A00F9C311 /* ShareFB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF0DD55D1D8FD23A00F9C311 /* ShareFB.storyboard */; settings = {ASSET_TAGS = (); }; };
-		EF0DD5611D8FD45B00F9C311 /* ic_logout_fb.png in Resources */ = {isa = PBXBuildFile; fileRef = EF0DD5601D8FD45B00F9C311 /* ic_logout_fb.png */; settings = {ASSET_TAGS = (); }; };
-		EF0DD5631D8FD76100F9C311 /* ic_share.png in Resources */ = {isa = PBXBuildFile; fileRef = EF0DD5621D8FD76100F9C311 /* ic_share.png */; settings = {ASSET_TAGS = (); }; };
-		EF0DD5661D8FDE4A00F9C311 /* ic_share@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF0DD5641D8FDE4A00F9C311 /* ic_share@2x.png */; settings = {ASSET_TAGS = (); }; };
-		EF0DD5671D8FDE4A00F9C311 /* ic_share@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF0DD5651D8FDE4A00F9C311 /* ic_share@3x.png */; settings = {ASSET_TAGS = (); }; };
-		EF0DD56B1D8FE01500F9C311 /* ShareFBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0DD56A1D8FE01500F9C311 /* ShareFBViewController.m */; settings = {ASSET_TAGS = (); }; };
-		EF0DD5701D904C5100F9C311 /* DisplayImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF0DD56F1D904C5000F9C311 /* DisplayImageView.xib */; settings = {ASSET_TAGS = (); }; };
-		EF394B6B1D8F87FD00E2A9B9 /* ic_button_loginfb.png in Resources */ = {isa = PBXBuildFile; fileRef = EF394B6A1D8F87FD00E2A9B9 /* ic_button_loginfb.png */; settings = {ASSET_TAGS = (); }; };
-		EF5422DB1D8A7B7E001DF8F9 /* ic_facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = EF5422DA1D8A7B7E001DF8F9 /* ic_facebook.png */; settings = {ASSET_TAGS = (); }; };
+		EF0DD55F1D8FD23A00F9C311 /* ShareFB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF0DD55D1D8FD23A00F9C311 /* ShareFB.storyboard */; };
+		EF0DD5611D8FD45B00F9C311 /* ic_logout_fb.png in Resources */ = {isa = PBXBuildFile; fileRef = EF0DD5601D8FD45B00F9C311 /* ic_logout_fb.png */; };
+		EF0DD5631D8FD76100F9C311 /* ic_share.png in Resources */ = {isa = PBXBuildFile; fileRef = EF0DD5621D8FD76100F9C311 /* ic_share.png */; };
+		EF0DD5661D8FDE4A00F9C311 /* ic_share@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF0DD5641D8FDE4A00F9C311 /* ic_share@2x.png */; };
+		EF0DD5671D8FDE4A00F9C311 /* ic_share@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF0DD5651D8FDE4A00F9C311 /* ic_share@3x.png */; };
+		EF0DD56B1D8FE01500F9C311 /* ShareFBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0DD56A1D8FE01500F9C311 /* ShareFBViewController.m */; };
+		EF0DD5701D904C5100F9C311 /* DisplayImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF0DD56F1D904C5000F9C311 /* DisplayImageView.xib */; };
+		EF394B6B1D8F87FD00E2A9B9 /* ic_button_loginfb.png in Resources */ = {isa = PBXBuildFile; fileRef = EF394B6A1D8F87FD00E2A9B9 /* ic_button_loginfb.png */; };
+		EF5422DB1D8A7B7E001DF8F9 /* ic_facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = EF5422DA1D8A7B7E001DF8F9 /* ic_facebook.png */; };
 		EF5FA7AE1D6AE22200E4B95F /* DataValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5FA7AD1D6AE22200E4B95F /* DataValidation.m */; };
 		EF635BFF1D6CB21900BEB9A1 /* TrainerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EF635BFE1D6CB21900BEB9A1 /* TrainerManager.m */; };
 		EF635C021D6D79BC00BEB9A1 /* UIImageConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = EF635C011D6D79BC00BEB9A1 /* UIImageConstant.m */; };
@@ -162,6 +164,9 @@
 		404650B81D86AF6B005229AD /* 1_gym_view_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1_gym_view_bg.png; sourceTree = "<group>"; };
 		406E247F1D62C7AD00F013FB /* CalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalendarViewController.h; path = ViewControllers/CalendarViewController/CalendarViewController.h; sourceTree = "<group>"; };
 		406E24801D62C7AD00F013FB /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CalendarViewController.m; path = ViewControllers/CalendarViewController/CalendarViewController.m; sourceTree = "<group>"; };
+		407BB47E1D9135AB008B1EE1 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = ViewControllers/MapViewController/MapViewController.h; sourceTree = "<group>"; };
+		407BB47F1D9135AB008B1EE1 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = ViewControllers/MapViewController/MapViewController.m; sourceTree = "<group>"; };
+		407BB4841D9135ED008B1EE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Map.storyboard; sourceTree = "<group>"; };
 		4089330D1D646B050081511C /* Customer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Customer.h; path = Modal/User/Customer.h; sourceTree = "<group>"; };
 		4089330E1D646B050081511C /* Customer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Customer.m; path = Modal/User/Customer.m; sourceTree = "<group>"; };
 		4089330F1D646B050081511C /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = Modal/User/Person.h; sourceTree = "<group>"; };
@@ -403,6 +408,15 @@
 			name = CalendarViewController;
 			sourceTree = "<group>";
 		};
+		407BB47D1D913569008B1EE1 /* MapViewController */ = {
+			isa = PBXGroup;
+			children = (
+				407BB47E1D9135AB008B1EE1 /* MapViewController.h */,
+				407BB47F1D9135AB008B1EE1 /* MapViewController.m */,
+			);
+			name = MapViewController;
+			sourceTree = "<group>";
+		};
 		4089330C1D646AED0081511C /* User */ = {
 			isa = PBXGroup;
 			children = (
@@ -579,6 +593,7 @@
 				EFF28BCE1D6572A7000F9B27 /* MeetingDetailViewController */,
 				EF0809941D5C975E007A8EAE /* TransactionsViewController */,
 				EF0809951D5C976D007A8EAE /* MenuViewController */,
+				407BB47D1D913569008B1EE1 /* MapViewController */,
 				EF0DD5681D8FDFEC00F9C311 /* ShareFBViewController */,
 				EFFD8D5D1D66FB1300994CC5 /* CategoryViewController */,
 				EF7E23E81D67404700B613FD /* EditNumberOfCategoryViewController */,
@@ -667,6 +682,7 @@
 				EF0D908E1D7EB29700A2EE4A /* DetailMeetingPT.storyboard */,
 				EF0D90981D81216A00A2EE4A /* Income.storyboard */,
 				EF0DD55D1D8FD23A00F9C311 /* ShareFB.storyboard */,
+				407BB4831D9135ED008B1EE1 /* Map.storyboard */,
 			);
 			name = Storyboard;
 			sourceTree = "<group>";
@@ -1114,6 +1130,7 @@
 				EF7D77FC1D752EBC00A6C63F /* notifications@2x.png in Resources */,
 				EF7D77F91D752EBC00A6C63F /* friends@2x.png in Resources */,
 				40EDFA6F1D7D48DB006EDD5D /* Plus-96.png in Resources */,
+				407BB4851D9135ED008B1EE1 /* Map.storyboard in Resources */,
 				EF0DD5661D8FDE4A00F9C311 /* ic_share@2x.png in Resources */,
 				EF7D77F81D752EBC00A6C63F /* friends.png in Resources */,
 			);
@@ -1239,6 +1256,7 @@
 				406E24811D62C7AD00F013FB /* CalendarViewController.m in Sources */,
 				EFF28BE31D6585BA000F9B27 /* DateFormatter.m in Sources */,
 				EF74B2FB1D6EA86B00D17C52 /* ParseJson.m in Sources */,
+				407BB4801D9135AB008B1EE1 /* MapViewController.m in Sources */,
 				EFF19FAD1D62064000EAD1D1 /* EditMyProfileViewController.m in Sources */,
 				EFF19FA91D61FA7A00EAD1D1 /* MyProfileViewController.m in Sources */,
 				EF635C021D6D79BC00BEB9A1 /* UIImageConstant.m in Sources */,
@@ -1258,6 +1276,14 @@
 				400C78DA1D67465F00CEE19B /* Base */,
 			);
 			name = Calendar.storyboard;
+			sourceTree = "<group>";
+		};
+		407BB4831D9135ED008B1EE1 /* Map.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				407BB4841D9135ED008B1EE1 /* Base */,
+			);
+			name = Map.storyboard;
 			sourceTree = "<group>";
 		};
 		40AB31221D5DB47400341359 /* Transaction.storyboard */ = {

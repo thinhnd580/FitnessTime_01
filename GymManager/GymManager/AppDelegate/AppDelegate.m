@@ -12,6 +12,7 @@
 #import "MenuViewController.h"
 #import "TransactionsViewController.h"
 #import "LoginViewController.h"
+@import GoogleMaps;
 
 @interface AppDelegate ()
 @end
@@ -23,6 +24,8 @@
     [MagicalRecord setupCoreDataStackWithStoreNamed:kCoreDataModel];
     //Register local notification
     [self setupLocalNotification];
+    //Register Google map
+    [GMSServices provideAPIKey:kGoogleMapKey];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     if ([[DataStore sharedDataStore] isLoged]) {
         [self loadTabbarController];

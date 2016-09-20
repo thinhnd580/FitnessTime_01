@@ -121,6 +121,9 @@ NSString *const kNotiDictKeyTrainer = @"trainer";
 NSString *const kNotiDictKeyCustomer = @"customer";
 NSString *const kNotiDictKeyTrainerPhone = @"trainer_phone";
 
+#pragma mark - GoogleMap SDK Key
+NSString *const kGoogleMapKey = @"AIzaSyBSMMO556YAW-T5TS5H9JItDTnU0FwaXlA";
+
 #pragma mark - API
 NSString *const URLRequest = @"https://fit-ness-backend.herokuapp.com/api/"; //@"http://172.16.0.131:3000/api/";
 NSString *const URLRequestTransaction = @"https://fit-ness-backend.herokuapp.com/api/orders";

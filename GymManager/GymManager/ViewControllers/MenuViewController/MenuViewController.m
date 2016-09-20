@@ -15,6 +15,7 @@
 #import "PTManagerViewController.h"
 #import "ListCategoryViewController.h"
 #import "ShareFBViewController.h"
+#import "MapViewController.h"
 
 typedef NS_ENUM(NSInteger, MenuDetailRows) {
     MenuDetailRowMyProfile,
@@ -22,6 +23,7 @@ typedef NS_ENUM(NSInteger, MenuDetailRows) {
     MenuDetailRowCustomerManager,
     MenuDetailRowCategory,
     MenuDetailRowShareFB,
+    MenuDetailRowGoogleMap,
     MenuDetailRowLogOut
 };
 
@@ -29,13 +31,14 @@ NSString *const kPTManagerTitle = @"PT Manager";
 NSString *const kLogoutTitle = @"Logout";
 NSString *const kCategoryTitle = @"Category";
 NSString *const kShareTitle = @"Share with Facebook";
+NSString *const kMapTitle = @"Your Maps";
 NSString *const kIconMyProfile = @"ic_myprofile";
 NSString *const kIconPTManager = @"ic_ptmanager";
 NSString *const kIconCustomerManager = @"ic_customer";
 NSString *const kIconLogout = @"ic_logout";
 NSString *const kIconCategory = @"ic_category";
 NSString *const kIconShareFB = @"ic_share";
-NSInteger const kNumberOfRowsInSectionMenu = 6;
+NSInteger const kNumberOfRowsInSectionMenu = 7;
 CGFloat const kHeightCellMenu = 50.0f;
 static NSString *const kCellDefault = @"CellDefault";
 
@@ -125,6 +128,12 @@ static NSString *const kCellDefault = @"CellDefault";
             }
             break;
         }
+        case MenuDetailRowGoogleMap: {
+            MapViewController *mapVC = [[UIStoryboard storyboardWithName:@"Map" bundle:nil]
+                instantiateInitialViewController];
+            [self.navigationController pushViewController:mapVC animated:YES];
+            break;
+        }
         case MenuDetailRowLogOut: {
             FBSDKLoginManager *loginManager = [[FBSDKLoginManager alloc] init];
             [loginManager logOut];
@@ -182,6 +191,8 @@ static NSString *const kCellDefault = @"CellDefault";
             return kShareTitle;
         case MenuDetailRowLogOut:
             return kLogoutTitle;
+        case MenuDetailRowGoogleMap:
+            return kMapTitle;
         default:
             return nil;
     }
